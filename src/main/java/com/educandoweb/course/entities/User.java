@@ -20,7 +20,7 @@ public class User implements Serializable {
     private String email;
     private String phone;
     private String password;
-
+    //lazy loading, importante conceito para carregar as informaçoes no banco
     @JsonIgnore
     @OneToMany(mappedBy = "client")
     private List<Order> orders = new ArrayList<>();
