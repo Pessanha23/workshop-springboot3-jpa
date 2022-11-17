@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
@@ -19,6 +20,8 @@ public class User implements Serializable {
     private String email;
     private String phone;
     private String password;
+
+    @JsonIgnore
     @OneToMany(mappedBy = "client")
     private List<Order> orders = new ArrayList<>();
 
