@@ -5,7 +5,6 @@ import com.educandoweb.course.entities.Product;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
 import java.util.Objects;
