@@ -23,6 +23,8 @@ public class OrderResource {
     @GetMapping
     public ResponseEntity<List<Order>> findAll() {
         List<Order> list = service.findAll();
+        // Em uma boa pratica, criamos uma lista aqui conectada a classe OrderJson, no caderno tem melhor explicado, mas é uma má pratica retornar entidade;
+        //Exist um metódo aqui para realizar a maneira correta, uam boa prática, uma funcao depara;
         return  ResponseEntity.ok().body(list);
     }
 
