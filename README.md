@@ -12,6 +12,7 @@ Primeiro CRUD, para fins de estudo, compreensão e boas práticas.
 * JPA;
 * Hibernate;
 * Postman;
+* PostgreSQL
 * H2;
 * Apache Tomcat;
 * Boas práticas de indentação;
